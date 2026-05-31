@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko" data-mood="light" data-accent="blue" data-motion="normal" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<script>
+  // progressive enhancement flag + failsafe so content can never stay hidden
+  document.documentElement.classList.add('js');
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      document.querySelectorAll('.reveal:not(.in)').forEach(function (e) { e.classList.add('in'); });
+    }, 2600);
+  });
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>이은숙 — 간호조무사 포트폴리오</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="stylesheet" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="backdrop" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="who"><span>이은숙</span><span class="role">간호조무사</span></div>
+  <nav class="nav">
+    <a href="#story">소개</a>
+    <a href="#certs">자격증</a>
+    <a href="#career">경력</a>
+    <a href="#contact">연락</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============== HERO ============== -->
+  <section class="sec s-hero" id="hero" data-screen-label="01 Hero">
+    <div class="wrap">
+      <div>
+        <p class="hero-en reveal">LEE EUNSOOK · NURSING ASSISTANT</p>
+        <div class="hero-head">
+          <h1 class="hero-name display reveal" data-d="1">이은숙</h1>
+          <div class="hero-photo reveal" data-d="2">
+            <img src="assets/photo.jpg" alt="이은숙 증명사진" style="width: 118px" />
+          </div>
+        </div>
+        <p class="hero-tag reveal" data-d="2">
+          이십여 년의 사회 경험,<br />이제 사람 곁에서 다시 시작합니다.
+        </p>
+        <div class="hero-roles reveal" data-d="3">
+          <span class="chip">간호조무사</span>
+          <span class="chip">요양보호사</span>
+          <span class="chip">병원동행매니저</span>
+        </div>
+      </div>
+    </div>
+    <div class="scrollcue" aria-hidden="true"><span>SCROLL</span><span class="bar"></span></div>
+  </section>
+
+  <!-- ============== STORY ============== -->
+  <section class="sec s-story" id="story" data-screen-label="02 Story">
+    <div class="wrap">
+      <p class="eyebrow reveal">인생의 두 번째 장</p>
+      <div class="story-lines">
+        <p class="pull reveal" data-d="1">IT에서 디자인을,</p>
+        <p class="pull reveal" data-d="2"><span class="dim">이제는</span> 사람을 돌봅니다.</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat reveal" data-d="1"><div class="num" data-count="20" data-suffix="+">0</div><div class="lbl">사회 경력(년)<br />IT · 사무 · 데이터</div></div>
+        <div class="stat reveal" data-d="2"><div class="num" data-count="6">0</div><div class="lbl">보유 국가·민간<br />자격증</div></div>
+        <div class="stat reveal" data-d="3"><div class="num" data-count="2026">0</div><div class="lbl">간호조무사<br />자격 취득</div></div>
+      </div>
+
+      <div class="story-body">
+        <p class="reveal">오랜 기간 IT 업계에서 홈페이지 기획·디자인·코딩을 해 왔고, 개인 사정으로 공백 기간이 있었습니다. 제2의 직업을 고민하던 중 간호조무사를 선택했고, 작년부터 본격적으로 공부를 시작해 자격증을 취득했습니다. 취득 후에는 주사(IV·IM)도 따로 배웠습니다.</p>
+        <p class="reveal">병원 실습 동안 젊은 선생님들께 배우고 지시를 받았는데, 불편함보다 배울 수 있다는 것이 더 좋았습니다. 모르는 것은 바로 물었고, 할 수 있는 일은 먼저 움직였습니다. 처음부터 잘하려 하기보다, 지적받은 것은 반복하지 않고 맡은 자리에서 꾸준히 쓸모 있는 사람이 되는 것을 목표로 합니다.</p>
+        <p class="sign reveal">— 오래 다닐 생각으로 지원했습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CERTIFICATIONS ============== -->
+  <section class="sec s-certs" id="certs" data-screen-label="03 Certifications">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow reveal">CERTIFICATIONS</p>
+          <h2 class="h-sec reveal" data-d="1">준비된 자격</h2>
+        </div>
+        <p class="lead reveal" data-d="2">간호·돌봄 현장에 바로 설 수 있도록 국가자격과 실무 자격을 함께 갖추었습니다.</p>
+      </div>
+
+      <div class="cert-grid">
+        <article class="cert reveal"><div class="idx">01</div><div class="name">간호조무사</div><div class="meta"><b>보건복지부</b><br />2026년 4월 취득</div></article>
+        <article class="cert reveal" data-d="1"><div class="idx">02</div><div class="name">요양보호사</div><div class="meta"><b>한국보건의료인국가시험원</b><br />2026년 5월 취득</div></article>
+        <article class="cert reveal" data-d="2"><div class="idx">03</div><div class="name">병원서비스<br />코디네이터</div><div class="meta"><b>한국간호역량개발협회</b><br />2025년 12월 취득</div></article>
+        <article class="cert reveal"><div class="idx">04</div><div class="name">맞춤돌봄<br />생활지원사</div><div class="meta"><b>한국간호역량개발협회</b><br />2025년 12월 취득</div></article>
+        <article class="cert reveal" data-d="1"><div class="idx">05</div><div class="name">병원동행매니저</div><div class="meta"><b>한국간호역량개발협회</b><br />2025년 12월 취득</div></article>
+        <article class="cert reveal" data-d="2"><div class="idx">06</div><div class="name">데이터분석<br />준전문가 (ADsP)</div><div class="meta"><b>한국데이터산업진흥원</b><br />2024년 6월 취득</div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CAREER TIMELINE ============== -->
+  <section class="sec s-timeline" id="career" data-screen-label="04 Career">
+    <div class="wrap">
+      <p class="eyebrow reveal">CAREER</p>
+      <h2 class="h-sec reveal" data-d="1">걸어온 길</h2>
+
+      <div class="tl">
+        <div class="tl-line" id="tlLine"></div>
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-when">1990 — 1995</div>
+          <div class="tl-what">현대제철 · 영업관리부</div>
+          <div class="tl-desc">영업관리 사무를 담당하며 사회 생활을 시작했습니다.</div>
+          <span class="tl-role">사무 · 사원</span>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-when">1996 — 2010</div>
+          <div class="tl-what">IT 업계 · 웹 기획/디자인/개발</div>
+          <div class="tl-desc">홈페이지 기획·디자인·코딩과 고객 커뮤니케이션을 맡았고, 사원에서 대리, 팀장으로 성장했습니다.</div>
+          <span class="tl-role">사원 → 대리 → 팀장</span>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-when">2022 — 2025</div>
+          <div class="tl-what">리서치림 · 데이터 업무</div>
+          <div class="tl-desc">엑셀과 시스템을 통한 데이터 입력 및 데이터 클리닝을 정확하게 수행했습니다.</div>
+          <span class="tl-role">데이터 입력 · 클리닝</span>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-when">2025 — 2026</div>
+          <div class="tl-what">간호 분야로 전환</div>
+          <div class="tl-desc">간호조무사·요양보호사 자격을 취득하고, 병원 실습과 주사(IV·IM) 실무까지 마쳤습니다.</div>
+          <span class="tl-role">자격 취득 · 실습 완료</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== EDUCATION ============== -->
+  <section class="sec s-edu" id="edu" data-screen-label="05 Education">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow reveal">TRAINING</p>
+          <h2 class="h-sec reveal" data-d="1">실무를 위한 준비</h2>
+        </div>
+        <p class="lead reveal" data-d="2">자격 취득에 머무르지 않고, 현장에서 바로 필요한 교육을 이수했습니다.</p>
+      </div>
+
+      <div class="edu-list">
+        <div class="edu-row reveal"><div class="when">2025.12</div><div class="title">심폐소생술(CPR) 교육</div><div class="org">한국간호역량개발협회</div></div>
+        <div class="edu-row reveal"><div class="when">2026.03</div><div class="title">간호조무사 치과취업과정</div><div class="org">서울특별시치과의사회</div></div>
+        <div class="edu-row reveal"><div class="when">2026.04</div><div class="title">간호조무사 실무과정</div><div class="org">서울특별시 50플러스재단</div></div>
+        <div class="edu-row reveal"><div class="when">2026.04–05</div><div class="title">주사 실무 (IV · IM) 5회 수료</div><div class="org">프라임 간호학원</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== DIGITAL ============== -->
+  <section class="sec s-digital" id="digital" data-screen-label="06 Digital">
+    <div class="wrap">
+      <p class="eyebrow reveal">DIGITAL FLUENCY</p>
+      <h2 class="h-sec reveal" data-d="1">기록과 데이터에<br />강한 간호 인력</h2>
+      <p class="lead reveal" data-d="2" style="margin: 15px 0px 0px">차트·기록·행정 업무가 늘어나는 의료 현장에서, 오랜 IT 경력은 분명한 강점이 됩니다.</p>
+
+      <div class="skills-top">
+        <div class="skill reveal"><div class="k">문서 작성</div><div class="v">한글 · MS Word · 업무 바로 가능</div><div class="track"><span class="fill" data-w="96"></span></div></div>
+        <div class="skill reveal" data-d="1"><div class="k">스프레드시트</div><div class="v">Excel · 함수 · 데이터 정리</div><div class="track"><span class="fill" data-w="94"></span></div></div>
+        <div class="skill reveal" data-d="2"><div class="k">프리젠테이션</div><div class="v">PowerPoint · 업무 바로 가능</div><div class="track"><span class="fill" data-w="90"></span></div></div>
+        <div class="skill reveal" data-d="3"><div class="k">정보 검색</div><div class="v">인터넷 · 자료 조사</div><div class="track"><span class="fill" data-w="92"></span></div></div>
+      </div>
+
+      <div class="skills-extra">
+        <p class="label reveal">그 외 보유 기술</p>
+        <div class="tags">
+          <span class="tag hot reveal">Python</span>
+          <span class="tag hot reveal" data-d="1">데이터분석 (ADsP)</span>
+          <span class="tag reveal" data-d="1">전자책 제작</span>
+          <span class="tag reveal" data-d="2">홈페이지 제작</span>
+          <span class="tag reveal" data-d="2">오름차트</span>
+          <span class="tag reveal" data-d="3">AI 활용 웹앱 제작</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STRENGTHS ============== -->
+  <section class="sec s-strength" id="strength" data-screen-label="07 Strengths">
+    <div class="wrap">
+      <p class="eyebrow reveal">WHY ME</p>
+      <h2 class="h-sec reveal" data-d="1">함께 일하면<br />좋은 이유</h2>
+      <div class="kw-grid">
+        <div class="kw reveal"><div class="big">성실함</div><div class="sm">맡은 자리에서 꾸준히, 오래. 오래 다닐 생각으로 지원했습니다.</div></div>
+        <div class="kw reveal" data-d="1"><div class="big">배우는 자세</div><div class="sm">나이와 경력에 기대지 않고, 모르는 것은 바로 묻고 익힙니다.</div></div>
+        <div class="kw reveal" data-d="2"><div class="big">디지털 역량</div><div class="sm">차트·기록·행정을 빠르고 정확하게. 데이터에 강합니다.</div></div>
+        <div class="kw reveal" data-d="3"><div class="big">책임감</div><div class="sm">지적받은 것은 반복하지 않고, 할 수 있는 일은 먼저 움직입니다.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section class="sec s-contact" id="contact" data-screen-label="08 Contact">
+    <div class="contact-wrap wrap">
+      <p class="eyebrow reveal" style="justify-content:center;">CONTACT</p>
+      <h2 class="contact-big reveal" data-d="1">사람 곁에서<br />오래 일하고 싶습니다.</h2>
+      <p class="contact-sub reveal" data-d="2">서울 은평구 · 즉시 근무 가능. 함께할 기회를 주신다면 성실히 임하겠습니다.</p>
+      <div class="contact-note reveal" data-d="3"><span class="dot"></span>연락처(전화 · 이메일)는 요청 시 제공해 드립니다.</div>
+      <div class="contact-foot reveal" data-d="3">
+        <span>이은숙 · 간호조무사</span>
+        <span>2026 · Portfolio</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- React + Babel for the Tweaks panel only -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+
+<script src="scroll.js"></script>
+</body>
+</html>
