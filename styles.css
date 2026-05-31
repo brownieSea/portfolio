@@ -192,7 +192,7 @@ img { display: block; max-width: 100%; }
   width: clamp(120px, 15vw, 210px);
   aspect-ratio: 276/354; border-radius: 16px; overflow: hidden;
   box-shadow: var(--shadow);
-  filter: grayscale(.12) contrast(1.02);
+  filter: none;
   border: 1px solid var(--line);
 }
 .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
